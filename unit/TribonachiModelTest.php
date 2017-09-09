@@ -31,7 +31,7 @@ class TribonachiModelTest extends TestCase
 
 
     /**
-     * Ожижаем исключение при превышение float
+     * Ожидаем исключение при превышение float
      * @dataProvider classProvider
      * @expectedException Exception
      */
@@ -41,7 +41,7 @@ class TribonachiModelTest extends TestCase
     }
 
     /**
-     * Ожидаем проверку числа меньше 1
+     * Ожидаем эксепшена на числе меньше 0
      * @dataProvider classProvider
      * @expectedException Exception
      */
@@ -51,7 +51,7 @@ class TribonachiModelTest extends TestCase
     }
 
     /**
-     * Список результатов [число, значениеъ]
+     * Проверочные расчеты [число, значение]
      * @return array
      */
     public function valueProvider()
